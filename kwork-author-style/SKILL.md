@@ -49,6 +49,10 @@ The text should feel like Ilya already looked at the brief and started thinking 
 - Use polite request wording near the end: prefer "Пришлите, пожалуйста..." over blunt "Пришлите..." when asking for materials, links, or a list of fixes.
 - Do not make the proposal a competency inventory. The main body must describe the result the client will get.
 - Do not use "работаю с..." as the central argument for technical tasks. Use stack mentions only as support for a concrete delivery plan.
+- Do not write contrast constructions for volume, such as "не разовая настройка Docker, а production-контур". Say the deliverable directly.
+- Do not repeat the same idea in different paragraphs. If the output includes an instruction for logs/rollback, do not also explain earlier that "it will be clear where to look at logs and how to rollback".
+- If the client's brief lists a requirement, phrase it as part of the work: "настрою CI/CD", not "могу добавить CI/CD".
+- Avoid qualifier words that create questions: "базовый", "простой", "минимальный", "обычный", unless the user explicitly asks to downscope.
 
 ## Anti-AI Filter
 
@@ -72,6 +76,11 @@ Avoid these words and patterns unless the user explicitly wants them:
 - "работаю с..." followed by a long technology list as the main paragraph
 - "по работе вижу такой контур" when it does not clearly say what will be delivered
 - long comma-separated technology inventories that repeat the client brief
+- contrast fillers like "не X, а Y" when they do not add meaning
+- duplicate promises about logs, rollback, checks, instructions, or support
+- "могу добавить" for items already requested in the order
+- "базовый CI/CD" unless the user asked for a minimal version
+- "простой rollback" if "rollback/откат" is enough
 - quoted negative comparisons like "лишь бы закрыть заказ", "для галочки", "как попало"
 - phrases where the author sounds like they are arguing against a bad freelancer instead of describing their own work
 
@@ -85,6 +94,12 @@ Replace generic phrases with exact work:
 
 - Not: "работаю с Linux, Docker, Nginx, SSL, CI/CD и мониторингом".
 - Better: "приведу сервер к рабочему production-виду: сервисы будут запускаться через Docker Compose, домены пойдут через reverse proxy с SSL, env/secrets будут разнесены, а деплой будет с health check и понятным откатом."
+
+- Not: "также могу добавить базовый CI/CD".
+- Better: "настрою CI/CD для обновления сервисов, проверки после деплоя и отката при сбое."
+
+- Not: "по задаче вижу не разовую настройку Docker, а нормальный production-контур".
+- Better: "настрою production-контур для AI/web-платформы."
 
 ## Proposal Workflow
 
@@ -115,6 +130,10 @@ Use these as small but important voice rules:
 - Prefer "точнее сориентирую по срокам" over "сразу скажу по срокам" when the client needs to send a list, links, or details.
 - Prefer "посмотрю объем и точнее сориентирую..." over "посмотрю объем и сразу скажу...".
 - Use "пожалуйста" in direct asks when it keeps the tone warmer.
+- Keep "все понял, сделаю" energy without literally writing generic phrases. The reader should feel confidence through concrete deliverables, not through promises.
+- Keep required work assertive. Use "настрою", "соберу", "подключу", "добавлю", "разверну", "проверю". Use "могу" mainly for optional extras or if the user asks whether something is possible.
+- Translate the client's technical list into your own compact wording. Do not copy `web / agent / cms / qdrant / redis / ollama` as a raw list unless it is important to show exact coverage. Prefer "сервисы и агенты" or "web, CMS и AI-сервисы" when enough.
+- Do not add adjectives that lower perceived value. "Базовый", "простой", "минимальный" can sound like an incomplete version. Use them only to intentionally limit scope.
 
 ## Outcome-First Rule
 
@@ -133,10 +152,16 @@ For infrastructure/DevOps orders, prefer this angle:
 - "соберу сервисы в Docker Compose";
 - "настрою reverse proxy, SSL, env/secrets";
 - "добавлю health checks, логи, бэкапы";
-- "сделаю простой деплой/обновление и понятный rollback";
+- "настрою деплой, проверку после выката и rollback";
 - "оставлю короткую инструкцию по запуску и сопровождению".
 
 Do not over-explain the architecture before seeing the real setup. Give a confident first-pass delivery plan, then ask for the current repository/server shape.
+
+Do a duplicate-meaning pass for infrastructure replies:
+
+- If one paragraph says "при проблемах будет понятно, где смотреть логи и как откатиться", and another says "инструкция: как проверять состояние и что делать при сбое", keep only the stronger output statement.
+- If the client already listed the services, avoid repeating the exact service list unless it proves coverage.
+- If the brief says CI/CD is needed, do not mark it as optional.
 
 ### If The Brief Is Detailed
 
@@ -317,5 +342,6 @@ Before giving the final text:
 7. Check whether the stack reads naturally and is grouped by meaning, not copied from the order.
 8. Check direct asks for polite wording when appropriate.
 9. Check whether the reply is outcome-first. If it mainly lists tools, rewrite it.
+10. Remove contrast phrases, duplicate meanings, and qualifier words that create extra questions.
 
 If the user provides their draft, preserve the shape and improve it instead of fully rewriting unless the draft is weak.
