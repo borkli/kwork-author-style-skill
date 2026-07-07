@@ -45,6 +45,8 @@ The text should feel like Ilya already looked at the brief and started thinking 
 - If the user wants a low-price-for-review angle, include it in the first sentence, but make it sound normal and not desperate.
 - Do not use negative contrast phrases in quotes, such as "лишь бы закрыть заказ", "для галочки", "как попало", or similar comparisons with bad work.
 - Do not justify professionalism by contrasting it with obviously unprofessional behavior. State the positive working standard directly.
+- Do not open with "могу взять задачу/правки" when the user is already replying to a posted order. It is usually obvious and often sounds redundant.
+- Use polite request wording near the end: prefer "Пришлите, пожалуйста..." over blunt "Пришлите..." when asking for materials, links, or a list of fixes.
 
 ## Anti-AI Filter
 
@@ -62,6 +64,9 @@ Avoid these words and patterns unless the user explicitly wants them:
 - "надежное и масштабируемое решение"
 - "под ключ" repeated too often
 - "ваш проект будет..." with vague promises
+- "со стеком из задачи работаю"
+- "могу взять правки по сайту" as an empty first sentence
+- "сразу скажу по срокам" when the user already has rough timing or the scope needs уточнение
 - quoted negative comparisons like "лишь бы закрыть заказ", "для галочки", "как попало"
 - phrases where the author sounds like they are arguing against a bad freelancer instead of describing their own work
 
@@ -84,6 +89,23 @@ Before writing a Kwork/freelance response:
 5. Write a short reply that proves the task was read.
 6. Include only relevant next-step needs.
 7. Run an internal anti-AI pass and remove generic filler.
+
+## Micro Style Corrections
+
+Use these as small but important voice rules:
+
+- If the reply is already an order response, skip empty openings like "могу взять эту задачу". Start with the useful context: reviews, experience, or understanding of the work.
+- Do not write "со стеком из задачи". Write "работаю со стеком..." or name the relevant stack directly.
+- Compile the stack by context instead of copying all technologies in one dry line.
+- Group related technologies together:
+  - frontend: HTML, CSS, JavaScript, TypeScript, Bootstrap, jQuery;
+  - WordPress stack: PHP, WordPress, MySQL;
+  - backend/automation: Python, API, scripts, integrations;
+  - DevOps: Linux, Docker, Nginx/reverse proxy, SSL, CI/CD, monitoring.
+- If a stack item is obvious from a stronger one, include it only when the client named it or it helps matching. For example, HTML/CSS can be omitted or mentioned briefly if JavaScript/TypeScript and frontend work already imply it.
+- Prefer "точнее сориентирую по срокам" over "сразу скажу по срокам" when the client needs to send a list, links, or details.
+- Prefer "посмотрю объем и точнее сориентирую..." over "посмотрю объем и сразу скажу...".
+- Use "пожалуйста" in direct asks when it keeps the tone warmer.
 
 ### If The Brief Is Detailed
 
@@ -261,5 +283,7 @@ Before giving the final text:
 4. Check that the reply is written for this specific brief.
 5. Replace em dash with hyphen or medium dash.
 6. Make the ending practical, not salesy.
+7. Check whether the stack reads naturally and is grouped by meaning, not copied from the order.
+8. Check direct asks for polite wording when appropriate.
 
 If the user provides their draft, preserve the shape and improve it instead of fully rewriting unless the draft is weak.
