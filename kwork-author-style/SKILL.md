@@ -43,6 +43,8 @@ The text should feel like Ilya already looked at the brief and started thinking 
 - Match technical depth to the client's brief. If the client is non-technical, explain in simple constructions.
 - Do not invent portfolio, experience, numbers, guarantees, or proof.
 - If the user wants a low-price-for-review angle, include it in the first sentence, but make it sound normal and not desperate.
+- Do not use negative contrast phrases in quotes, such as "лишь бы закрыть заказ", "для галочки", "как попало", or similar comparisons with bad work.
+- Do not justify professionalism by contrasting it with obviously unprofessional behavior. State the positive working standard directly.
 
 ## Anti-AI Filter
 
@@ -60,6 +62,8 @@ Avoid these words and patterns unless the user explicitly wants them:
 - "надежное и масштабируемое решение"
 - "под ключ" repeated too often
 - "ваш проект будет..." with vague promises
+- quoted negative comparisons like "лишь бы закрыть заказ", "для галочки", "как попало"
+- phrases where the author sounds like they are arguing against a bad freelancer instead of describing their own work
 
 Replace generic phrases with exact work:
 
@@ -229,13 +233,13 @@ Use this only when the user asks for it.
 Good:
 
 ```text
-Готов взять задачу по минимальной цене за отзыв: сейчас набираю первые заказы на площадке, поэтому могу сделать дешевле, но нормально и без экономии на качестве.
+Готов взять задачу по минимальной цене за отзыв: сейчас набираю первые заказы на площадке, поэтому могу сделать дешевле и при этом спокойно довести работу до нормального результата.
 ```
 
 Also acceptable:
 
 ```text
-Могу взять этот заказ дешевле за отзыв, потому что сейчас набираю первые работы на площадке. При этом сделаю не "для галочки", а с нормальной структурой и проверкой перед сдачей.
+Могу взять этот заказ дешевле за отзыв, потому что сейчас набираю первые работы на площадке. Сделаю с нормальной структурой, адаптивом и проверкой перед сдачей.
 ```
 
 Avoid:
@@ -244,6 +248,8 @@ Avoid:
 - "мне очень нужен отзыв"
 - "качество гарантирую на 100%"
 - "дешево, быстро, качественно"
+- `без подхода "лишь бы закрыть заказ"`
+- `не "для галочки"`
 
 ## Final Editing Pass
 
