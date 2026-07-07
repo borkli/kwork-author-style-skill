@@ -47,6 +47,8 @@ The text should feel like Ilya already looked at the brief and started thinking 
 - Do not justify professionalism by contrasting it with obviously unprofessional behavior. State the positive working standard directly.
 - Do not open with "могу взять задачу/правки" when the user is already replying to a posted order. It is usually obvious and often sounds redundant.
 - Use polite request wording near the end: prefer "Пришлите, пожалуйста..." over blunt "Пришлите..." when asking for materials, links, or a list of fixes.
+- Do not make the proposal a competency inventory. The main body must describe the result the client will get.
+- Do not use "работаю с..." as the central argument for technical tasks. Use stack mentions only as support for a concrete delivery plan.
 
 ## Anti-AI Filter
 
@@ -67,6 +69,9 @@ Avoid these words and patterns unless the user explicitly wants them:
 - "со стеком из задачи работаю"
 - "могу взять правки по сайту" as an empty first sentence
 - "сразу скажу по срокам" when the user already has rough timing or the scope needs уточнение
+- "работаю с..." followed by a long technology list as the main paragraph
+- "по работе вижу такой контур" when it does not clearly say what will be delivered
+- long comma-separated technology inventories that repeat the client brief
 - quoted negative comparisons like "лишь бы закрыть заказ", "для галочки", "как попало"
 - phrases where the author sounds like they are arguing against a bad freelancer instead of describing their own work
 
@@ -77,6 +82,9 @@ Replace generic phrases with exact work:
 
 - Not: "реализую сайт под ключ".
 - Better: "сверстаю главную по Figma, перенесу остальные страницы с Tilda и соберу кастомную тему WordPress без конструктора."
+
+- Not: "работаю с Linux, Docker, Nginx, SSL, CI/CD и мониторингом".
+- Better: "приведу сервер к рабочему production-виду: сервисы будут запускаться через Docker Compose, домены пойдут через reverse proxy с SSL, env/secrets будут разнесены, а деплой будет с health check и понятным откатом."
 
 ## Proposal Workflow
 
@@ -89,6 +97,7 @@ Before writing a Kwork/freelance response:
 5. Write a short reply that proves the task was read.
 6. Include only relevant next-step needs.
 7. Run an internal anti-AI pass and remove generic filler.
+8. Check whether the client can understand the deliverable after reading the reply once.
 
 ## Micro Style Corrections
 
@@ -106,6 +115,28 @@ Use these as small but important voice rules:
 - Prefer "точнее сориентирую по срокам" over "сразу скажу по срокам" when the client needs to send a list, links, or details.
 - Prefer "посмотрю объем и точнее сориентирую..." over "посмотрю объем и сразу скажу...".
 - Use "пожалуйста" in direct asks when it keeps the tone warmer.
+
+## Outcome-First Rule
+
+For technical orders, structure the reply around deliverables:
+
+- what will be configured;
+- what will work after delivery;
+- how the client will deploy/update/check the system;
+- what artifact or access they will receive.
+
+The stack can be mentioned, but only after or inside the delivery statement. Avoid a paragraph that only says "I work with X, Y, Z".
+
+For infrastructure/DevOps orders, prefer this angle:
+
+- "подниму production-контур";
+- "соберу сервисы в Docker Compose";
+- "настрою reverse proxy, SSL, env/secrets";
+- "добавлю health checks, логи, бэкапы";
+- "сделаю простой деплой/обновление и понятный rollback";
+- "оставлю короткую инструкцию по запуску и сопровождению".
+
+Do not over-explain the architecture before seeing the real setup. Give a confident first-pass delivery plan, then ask for the current repository/server shape.
 
 ### If The Brief Is Detailed
 
@@ -285,5 +316,6 @@ Before giving the final text:
 6. Make the ending practical, not salesy.
 7. Check whether the stack reads naturally and is grouped by meaning, not copied from the order.
 8. Check direct asks for polite wording when appropriate.
+9. Check whether the reply is outcome-first. If it mainly lists tools, rewrite it.
 
 If the user provides their draft, preserve the shape and improve it instead of fully rewriting unless the draft is weak.
