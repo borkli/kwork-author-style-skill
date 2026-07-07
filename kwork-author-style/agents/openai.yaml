@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kwork Author Style"
+  short_description: "Russian Kwork replies and service copy in Ilya's style"
+  default_prompt: "Напиши отклик или описание кворка в моем стиле"
