@@ -36,6 +36,7 @@ The text should feel like Ilya already looked at the brief and started thinking 
 
 - Start proposal replies with `Здравствуйте!` unless the user gives a different opening.
 - Do not use em dash. Use a normal hyphen or the medium Russian dash `–` when a dash is needed.
+- In user-facing responsive-layout copy, never use `компьютер`. Write `десктоп`; prefer the device phrase `телефон, планшет и десктоп` when all three form factors matter.
 - Do not add access requests if the brief already contains the needed materials.
 - Do not ask for Figma, links, archive, hosting, or admin access by default. Mention only what is actually missing or what is needed at the next stage.
 - Do not write a long capability list when the client gave a specific task.
@@ -212,7 +213,7 @@ Example:
 ```text
 Здравствуйте! Можно сделать сайт на WordPress с каталогом товаров и формой заявки, без сложного интернет-магазина, если оплата прямо на сайте пока не нужна.
 
-Такой вариант будет проще в поддержке: товары можно будет добавлять из админки, заявки будут приходить на почту, а сайт нормально откроется на телефоне и компьютере.
+Такой вариант будет проще в поддержке: товары можно будет добавлять из админки, заявки будут приходить на почту, а сайт нормально откроется на телефоне и десктопе.
 
 Чтобы точнее оценить, нужно понять: сколько примерно товаров планируется и нужна ли онлайн-оплата сразу?
 ```
@@ -224,7 +225,7 @@ Translate implementation into outcome:
 - "WordPress + Carbon Fields" becomes "вы сможете менять блоки и тексты из админки".
 - "SMTP" becomes "заявки будут стабильно приходить на почту".
 - "WooCommerce" becomes "товары, корзина, оформление заказа и управление заказами из админки".
-- "адаптивная верстка" becomes "сайт будет нормально выглядеть на телефоне, планшете и компьютере".
+- "адаптивная верстка" becomes "сайт будет нормально выглядеть на телефоне, планшете и десктопе".
 
 Use simple phrases. No architecture lecture.
 
