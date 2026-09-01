@@ -37,7 +37,7 @@ jobs:
               raise SystemExit(f"Missing required files: {', '.join(missing)}")
 
           skill = (root / "SKILL.md").read_text(encoding="utf-8")
-          if not skill.startswith("---\\nname: technical-communication\\n"):
+          if skill.splitlines()[:2] != ["---", "name: technical-communication"]:
               raise SystemExit("SKILL.md has invalid frontmatter")
 
           content = "\\n".join(
