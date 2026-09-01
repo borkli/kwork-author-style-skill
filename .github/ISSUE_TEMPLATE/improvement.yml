@@ -1,0 +1,29 @@
+name: Improvement proposal
+description: Propose a focused improvement to the skill.
+title: "[Improvement]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the communication problem, not a preferred phrase.
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - Russian
+        - English
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+    validations:
+      required: true
