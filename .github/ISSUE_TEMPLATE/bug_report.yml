@@ -1,0 +1,35 @@
+name: Problem report
+description: Report guidance that produces an incorrect, unsafe, or unclear result.
+title: "[Problem]: "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - Russian
+        - English
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Writing context
+      description: Describe the audience, goal, and constraints without private information.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true

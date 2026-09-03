@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Communication"
+  short_description: "Bilingual technical business writing"
+  default_prompt: "Use $technical-communication to draft a clear technical message in Russian or English."
